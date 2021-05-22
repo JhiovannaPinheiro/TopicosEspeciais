@@ -14,10 +14,12 @@
 	<% 
 	
 		if (request.getParameter("titulo") == null || request.getParameter("ano") == null || request.getParameter("autor") == null) {
-			out.println("<h2> Por favor, para procurar o livro digite o título, ano de publicação e o autor da obra na URL!</h2>");
+			out.println("<h2> Por favor, para procurar o livro digite o tÃ­tulo, ano de publicaÃ§Ã£o e o autor da obra na URL!</h2>");
 			
-		} else {
-			out.println("<h2>Título: " + request.getParameter("titulo") + "<br>" + "Ano: " + 
+		} 
+		
+		else {
+			out.println("<h2>TÃ­tulo: " + request.getParameter("titulo") + "<br>" + "Ano: " + 
 			request.getParameter("ano") + "<br>" + "Autor: " + request.getParameter("autor") + "</h2>");
 		
 		}
